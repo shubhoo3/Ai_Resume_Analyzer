@@ -1,0 +1,25 @@
+version: "3.9"
+services:
+  db:
+    image: postgres:16
+    container_name: resume_analyzer_db
+    environment:
+      POSTGRES_USER: resume
+      POSTGRES_PASSWORD: resume_password
+      POSTGRES_DB: resume_analyzer
+    ports:
+      - "5432:5432"
+    volumes:
+      - db_data:/var/lib/postgresql/data
+  pgadmin:
+    image: dpage/pgadmin4:8
+    container_name: resume_analyzer_pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@example.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+    ports:
+      - "5050:80"
+    depends_on:
+      - db
+volumes:
+  db_data: {} 
