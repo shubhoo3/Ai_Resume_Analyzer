@@ -1,6 +1,7 @@
 # Resume Analyzer
 
-Full-stack app: React (Vite) + Node/Express + SQLite + Google Gemini.
+A comprehensive web application that analyzes resumes using AI (Google Gemini) and provides detailed feedback to help users improve their resumes.
+Full-stack app: React + Node/Express + SQLite + Google Gemini.
 
 ## Prerequisites
 
