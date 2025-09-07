@@ -47,8 +47,6 @@ cd server && npm run dev
 cd client && npm run dev
 ```
 
-Open http://localhost:5173
-
 ## API
 
 - POST `/api/analyze` form-data `file` (PDF)
